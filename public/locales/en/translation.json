@@ -1,0 +1,10 @@
+{
+  "navBar": {
+    "botaoNovo": "New"
+  },
+  "dashboard": {
+    "acoes": {
+      "placeholderInputPesquisa": "Search"
+    }
+  }
+}

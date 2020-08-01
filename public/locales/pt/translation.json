@@ -1,0 +1,13 @@
+{
+  "navBar": {
+    "botaoNovo": "Novo"
+  },
+  "dashboard": {
+    "acoes": {
+      "placeholderInputPesquisa": "Pesquisar",
+      "botaoAtribuir": "Atribuir",
+      "botaoArquivar": "Arquivar",
+      "botaoAgendar": "Agendar"
+    }
+  }
+}
