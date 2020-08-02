@@ -55,6 +55,19 @@ input {
     outline: none;
 }
 
+.Toastify__toast {
+font-family: 'Roboto', sans-serif;
+line-height: 2.5rem;
+}
+
+.Toastify__toast--info {
+background-color: rgb(128,176,208);
+}
+
+.Toastify__toast--error {
+background-color: ${({theme}: ThemeInnerModel) => theme.dangerColor};
+}
+
 `
 
 

@@ -1,9 +1,9 @@
 import {combineReducers} from "redux";
-import {theme} from "./sagas/theme";
-import {auth} from "./sagas/auth";
+import {theme} from "./reducers_sagas/theme";
+import {auth} from "./reducers_sagas/auth";
 import {connectRouter} from "connected-react-router";
 import {history} from "../core/storeRoutes";
-import {data} from "./sagas/data";
+import {data} from "./reducers_sagas/data";
 
 const rootReducers = combineReducers({
     router: connectRouter(history),

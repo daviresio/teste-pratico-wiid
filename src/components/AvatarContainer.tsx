@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {Row} from "../styles/flex";
 import {ThemeInnerModel} from "../models/theme.model";
 
-const AvatarContainer = styled.div<{size?: string}>`
+const AvatarContainer = styled.div<{size?: string, ref?: any}>`
 ${Row};
 justify-content: center;
 width: ${({size = '5rem'}) => size};

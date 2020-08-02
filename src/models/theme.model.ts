@@ -4,6 +4,7 @@ export default interface Theme {
     ligthColor: string
     darkColor: string
     successColor: string
+    dangerColor: string
     primaryColor: string
     primaryColorLight: string
     primaryColorVeryLight: string

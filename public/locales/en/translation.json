@@ -1,10 +1,28 @@
 {
   "navBar": {
-    "botaoNovo": "New"
+    "botaoNovo": "New",
+    "sair": "Logout"
   },
   "dashboard": {
     "acoes": {
-      "placeholderInputPesquisa": "Search"
-    }
+      "placeholderInputPesquisa": "Search",
+      "botaoAtribuir": "Assign",
+      "botaoArquivar": "Archive",
+      "botaoAgendar": "Schedule"
+    },
+    "emailsArquivados": "E-mails archived sucessfuly!",
+    "selecioneUmParaArquivar": "Select one or more e-mails for archive",
+    "nenhumItemEncontrado": "No email found"
+  },
+  "email": {
+    "hoje": "Today",
+    "horas": "hours"
+  },
+  "auth": {
+    "usuario": "User",
+    "senha": "Password",
+    "usuarioPlaceholder": "Type the username",
+    "senhaPlaceholder": "Type the password",
+    "entrar": "Login"
   }
 }

@@ -1,6 +1,7 @@
 {
   "navBar": {
-    "botaoNovo": "Novo"
+    "botaoNovo": "Novo",
+    "sair": "Sair"
   },
   "dashboard": {
     "acoes": {
@@ -8,6 +9,20 @@
       "botaoAtribuir": "Atribuir",
       "botaoArquivar": "Arquivar",
       "botaoAgendar": "Agendar"
-    }
+    },
+    "emailsArquivados": "E-mails arquivados com sucesso!",
+    "selecioneUmParaArquivar": "Selecione pelo menos um E-mail para arquivar",
+    "nenhumItemEncontrado": "Nenhum e-mail encontrado"
+  },
+  "email": {
+    "hoje": "Hoje",
+    "horas": "horas"
+  },
+  "auth": {
+    "usuario": "Usuario",
+    "senha": "Senha",
+    "usuarioPlaceholder": "Digite o nome do usuario",
+    "senhaPlaceholder": "Digite a senha",
+    "entrar": "Entrar"
   }
 }

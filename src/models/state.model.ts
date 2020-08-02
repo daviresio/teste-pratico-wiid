@@ -1,6 +1,6 @@
-import {ThemeStoreType} from "../store/sagas/theme";
-import {AuthStoreType} from "../store/sagas/auth";
-import {DataStoreType} from "../store/sagas/data";
+import {ThemeStoreType} from "../store/reducers_sagas/theme";
+import {AuthStoreType} from "../store/reducers_sagas/auth";
+import {DataStoreType} from "../store/reducers_sagas/data";
 
 export interface State {
     router: any

@@ -31,12 +31,12 @@ const Dropdown: any = styled.div.attrs(() => ({
 ${Row};
 justify-content: center;
 width: 3rem;
-height: 3.8rem;
+height: 3.4rem;
 cursor: pointer;
 color: #fff;
 font-size: 1.8rem;
-border-bottom-right-radius: .5rem;
-border-top-right-radius: .5rem;
+border-bottom-right-radius: .3rem;
+border-top-right-radius: .3rem;
 background-color: ${({theme}: ThemeInnerModel) => theme.primaryColor};
 &:hover {
 background-color: ${({theme}: ThemeInnerModel) => theme.primaryColorLight};

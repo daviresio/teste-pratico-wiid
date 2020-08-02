@@ -5,6 +5,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './i18n'
 
+// @ts-ignore
+window.FontAwesomeConfig = {
+    searchPseudoElements: true
+}
+
 ReactDOM.render(
     <React.StrictMode>
         <Suspense fallback={null}>

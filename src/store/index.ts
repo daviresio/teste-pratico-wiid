@@ -1,7 +1,7 @@
 import createSagaMiddleware from 'redux-saga'
 import {applyMiddleware, createStore, compose} from "redux"
 import rootReducers from "./rootReducers"
-import rootSaga from "./sagas";
+import rootSaga from "./reducers_sagas";
 import localForage from 'localforage'
 import { persistStore, persistReducer } from 'redux-persist'
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2'
@@ -23,6 +23,7 @@ const persistConfig = {
     key: 'root',
     storage: localForage,
     stateReconciler: autoMergeLevel2,
+    whitelist: ['auth', 'theme'],
 }
 
 // @ts-ignore

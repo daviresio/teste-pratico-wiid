@@ -1,13 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
-import {ThemeInnerModel} from "../models/theme.model";
+import {hexToRgba} from "../util/color_util";
+import {Row} from "../styles/flex";
 
-interface ComponentProps {
-    label: string
-    style?: any
-}
-
-const Button: React.FC<ComponentProps> = ({label, ...props}) => {
+const Button = ({label, ...props}: any) => {
     return (
         <ButtonStyled {...props}>{label}</ButtonStyled>
     );
@@ -16,13 +12,15 @@ const Button: React.FC<ComponentProps> = ({label, ...props}) => {
 export default Button;
 
 const ButtonStyled = styled.button`
+${Row};
+justify-content: center;
 padding: 0 2.5rem;
-height: 3.8rem;
+height: 3.4rem;
 color: #fff;
-border-radius: .5rem;
+border-radius: .3rem;
 cursor: pointer;
-background-color: ${({theme}: ThemeInnerModel) => theme.primaryColor};
+background-color: ${({color = 'primaryColor', theme}: any) => theme[color]};
 &:hover {
-background-color: ${({theme}: ThemeInnerModel) => theme.primaryColorLight};
+background-color: ${({color = 'primaryColor', theme}: any) => hexToRgba(theme[color], .8)};
 }
 `

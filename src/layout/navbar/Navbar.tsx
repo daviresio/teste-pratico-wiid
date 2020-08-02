@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import {Row} from "../../styles/flex";
+import {Column, Row} from "../../styles/flex";
 import EmptyUserPhotoContainer from "./EmptyUserPhoto";
 import Theme, {ThemeInnerModel} from "../../models/theme.model";
 import ButtonDropdown from "../../components/ButtonDropdown";
@@ -50,6 +50,10 @@ const Navbar = () => {
         <NavbarContainer>
             <UserInfoContainer>
                 <EmptyUserPhotoContainer/>
+                <UserNameAndEmail>
+                    <UserName>Admin</UserName>
+                    <UserEmail>email@email.com</UserEmail>
+                </UserNameAndEmail>
                 <ButtonDropdown label={t('navBar.botaoNovo')}/>
             </UserInfoContainer>
             <StyledDivider/>
@@ -87,6 +91,7 @@ export default Navbar;
 const NavbarContainer = styled.div`
 background-color: ${({theme}: ThemeInnerModel) => theme.bodySecundaryColor};
 ${BoxShadowDefault};
+overflow: hidden;
 `
 
 const UserInfoContainer = styled.div`
@@ -125,8 +130,8 @@ padding: 0 4rem;
 cursor: pointer;
 ${({isActive, theme}: IsActiveWithTheme) => 
     isActive ? ({
-        backgroundColor: theme.primaryColor,
-        color: theme.textSecundaryColor,
+        color: theme.primaryColor,
+        fontWeight: 'bold',
 }) : ({
         '&:hover': {
             backgroundColor: theme.ligthColor,
@@ -146,4 +151,20 @@ ${({isActive, theme}: IsActiveWithTheme) =>
             backgroundColor: theme.ligthColor,
         }
     })};
+`
+
+const UserNameAndEmail = styled.div`
+${Column};
+align-items: flex-start;
+position: relative;
+left: -1.5rem;
+`
+
+const UserName = styled.span`
+margin-bottom: .5rem;
+`
+
+const UserEmail = styled.span`
+font-size: 1.2rem;
+font-weight: 100;
 `
